@@ -5,17 +5,33 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Calculos cerveceros!</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
-   
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Sitio de prueba para calculos cerveceros</h1>
+    <h1>Sitio para calculos cerveceros</h1>
     <h2>Calculos a realizar:</h2>
-    <h3>ABV</h3>
+    <form id="form-abv">
+        <h3>ABV</h3>
+        <label>Ingrese OG:
+            <input type="number" id="densidad-inicial">
+        </label>
+        <label>Ingrese FG:
+            <input type="number" id="densidad-final">
+        </label>
+        <label>ABV:
+            <input type="number" disabled id="abv">
+            <button id="boton-calculo-abv">Calcular</button>
+            <button id="boton-resetear-abv" class="oculto">Resetear</button>
+        </label>
+    </form>
+
     <h3>Corrección de densímetro</h3>
     <h3>Temperatura mash</h3>
     <h3>Cantidad de litros de agua</h3>
     <button id="boton">Clickeame</button>
 </body>
-<script src='calculos.js'></script>
+<script src='js/calculos.js'></script>
+<script src='js/manejo.js'></script>
+<script src='js/pruebas.js'></script>
+
 </html>
